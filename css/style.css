@@ -106,6 +106,7 @@ footer li {
     height: 100%;
     color: #f5000c;
     padding: 10px;
+    -webkit-text-stroke: 0.032rem black;
 }
 
 /* COMMON */
