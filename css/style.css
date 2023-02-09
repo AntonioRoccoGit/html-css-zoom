@@ -25,8 +25,17 @@ img {
     background-color: black;
 }
 
+.deg {
+    transform: rotate(45deg);
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* MAIN */
 .cam-layout {
+    position: relative;
     padding-top: 3%;
     width: 90%;
     margin: 0 auto;
@@ -37,6 +46,30 @@ img {
     height: calc(100vh - 60px);
     /* debug */
     /* background-color: rgb(71, 88, 88); */
+}
+
+.video-action-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.action-button button {
+    border-style: none;
+    color: white;
+    padding: 2px;
+    border-radius: 6px;
+    background-color: rgba(82, 82, 82, 0.6);
 }
 
 div.user-cam {
@@ -58,5 +91,14 @@ div.label {
 
 div.label i {
     margin-left: 4px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: #222222;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
 }
 
