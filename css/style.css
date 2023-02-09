@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -29,12 +33,30 @@ img {
     align-content: flex-start;
     flex-wrap: wrap;
     overflow: auto;
+    gap: 4px 4px;
+    height: calc(100vh - 60px);
     /* debug */
-    background-color: rgb(71, 88, 88);
-    height: calc(100vh - 80px);
+    /* background-color: rgb(71, 88, 88); */
 }
 
 div.user-cam {
-    width: calc(100% / 7 );
-    padding: 4px;
+    position: relative;
+    width: calc((100% / 7) - (32px / 7) );
 }
+
+/* label */
+div.label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    background-color: rgba(82, 82, 82, 0.6);
+    color: white;
+    font-weight: 200;
+    font-size: 0.8rem;
+    padding: 4px;    
+}
+
+div.label i {
+    margin-left: 4px;
+}
+
