@@ -11,43 +11,10 @@ body {
 
 img {
     max-width: 100%;
+    /* MAIN */
 }
 
-/* COMMON */
-.flex {
-    display: flex;
-}
-
-.web-app {
-    height: 100vh;
-    width: 100%;
-    /* debug */
-    background-color: black;
-}
-
-.deg {
-    transform: rotate(45deg);
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* MAIN */
-.cam-layout {
-    position: relative;
-    padding-top: 3%;
-    width: 90%;
-    margin: 0 auto;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    overflow: auto;
-    gap: 4px 4px;
-    height: calc(100vh - 60px);
-    /* debug */
-    /* background-color: rgb(71, 88, 88); */
-}
-
+/* video action menu */
 .video-action-menu {
     position: absolute;
     top: 0;
@@ -60,16 +27,16 @@ ul {
     padding: 3px;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 .action-button button {
     border-style: none;
     color: white;
-    padding: 2px;
+    padding: 5px;
     border-radius: 6px;
     background-color: rgba(82, 82, 82, 0.6);
+}
+
+.speaker {
+    margin-left: var(--m14px);
 }
 
 div.user-cam {
@@ -95,7 +62,6 @@ div.label i {
 
 /* FOOTER */
 footer {
-    display: flex;
     background-color: #222222;
     height: 60px;
     justify-content: space-between;
@@ -106,14 +72,91 @@ li button {
     border-style: none;
     background-color: transparent;
     color: white;
+    background-color: #222222;
 }
 
-button.voice-video i {
+footer i {
     font-size: 1.6rem;
 }
 
-button.voice-video h3 {
+footer h3 {
     font-weight: 200;
     font-size: 0.8rem;
+    margin-top: 6px;
+}
 
+footer li {
+    margin-left: var(--m14px)
+}
+
+.fa-table-cells-large {
+    background-color: white;
+    color: #222222;
+}
+
+.hover-green:hover i {
+    color: green;
+}
+
+/* log out button */
+
+.log-out-btn {
+    border-style: none;
+    background-color: #4A4A4A;
+    height: 100%;
+    color: #f5000c;
+    padding: 10px;
+}
+
+/* COMMON */
+.flex {
+    display: flex;
+}
+
+.web-app {
+    height: 100vh;
+    width: 100%;
+    /* debug */
+    background-color: black;
+}
+
+.deg {
+    transform: rotate(45deg);
+}
+
+ul {
+    list-style-type: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.menu-arrow {
+    display: inline-block;
+    color: white;
+    margin-left: var(--m14px);
+}
+
+.fa-angle-up {
+    font-size: .6rem;
+}
+
+.cam-layout {
+    position: relative;
+    padding-top: 3%;
+    width: 90%;
+    margin: 0 auto;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 4px 4px;
+    height: calc(100vh - 60px);
+    /* debug */
+    /* background-color: rgb(71, 88, 88); */
+}
+
+/* VARIABLES */
+:root {
+    --m14px: 14px;
 }
