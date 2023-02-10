@@ -89,6 +89,11 @@ footer li {
     margin-left: var(--m14px)
 }
 
+.voice-video-menu,
+.log-out-btn {
+    width: 15%;
+}
+
 .fa-table-cells-large {
     background-color: white;
     color: #222222;
@@ -153,8 +158,6 @@ button:hover {
     overflow: auto;
     gap: 4px 4px;
     height: calc(100vh - 60px);
-    /* debug */
-    /* background-color: rgb(71, 88, 88); */
 }
 
 /* VARIABLES */
